@@ -8,14 +8,15 @@ export const LoginScreen = ({history}) => {
 
     const handleLogin = () => {
         // history.push('/');
-        history.replace('/');
+        const lastPath = localStorage.getItem('lastPath') || '/';
+        
         dispatch({
             type: types.login,
             payload: {
                 name: 'Jimena'
             }
         })
-        
+        history.replace(lastPath);
     }
 
     return (
