@@ -8,7 +8,7 @@ export const HeroList = ( {publisher }) => {
 
 
     return (
-            <div className="row" data-masonry='{"percentPosition": true }'>
+            <div className="row animate__animated animate__fadeIn" data-masonry='{"percentPosition": true }'>
             {
                 heroes.map( hero => (
                     <HeroCard 
